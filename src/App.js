@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="container py-5">
         <div className="row justify-content-center mt-5">
-          <div className="col-md-6 col-lg-4 col-xl-4">
+          <div className="col-md-4 col-lg-4 col-xl-4">
             <Header></Header>
             <Main></Main>
 
