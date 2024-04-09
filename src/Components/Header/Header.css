@@ -1,0 +1,11 @@
+[data-theme="light"] {
+    --dark: white;
+    --body-color: white;
+}
+
+[data-theme="dark"] {
+    --dark: rgba(0, 0, 0, 0.152);
+    --body-color: gray;
+    --input-color:rgba(0, 0, 0, 0.162);
+
+}
