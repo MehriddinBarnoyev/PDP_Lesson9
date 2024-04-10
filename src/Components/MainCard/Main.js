@@ -9,17 +9,32 @@ import img3 from './images1/image3.png'
 import img4 from './images1/image4.png'
 import img5 from './images1/image5.png'
 
+
 class Main extends Component {
+    constructor (props){
+        super(props);
+
+        this.state = {
+            darkMode: false
+        }
+    }
+
+    toggleDarkMode = () =>{
+    this.state({darkMode: !this.state.darkMode})
+    }
+
+ 
     render() {
         return (
-            <div className="main ">
-                <div className="row pt-3">
+            <div className={'main'}>
+            <div className="row pt-3">
                     <div className="col ">
-                        <div className="row ">
+                    <div className={`row`}>
+
                             <div className="col d-flex ">
                                 <img src={img1} alt="" />
                                 <div className=" ">
-                                    <p className="h6 ms-4 d-flex justify-content">Abhishek Bro </p>
+                                    <p className={`h6 ms-4 d-flex justify-content${this.toggleDarkMode ? 'white' : 'black'}`}>Abhishek Bro </p>
                                     <p className="ms-4"> <FontAwesomeIcon icon={faCheck} /> Ma dami 👌 caption ma  garchu hai vai...</p>
                                 </div>
                             </div>

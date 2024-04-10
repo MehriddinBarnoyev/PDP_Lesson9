@@ -9,3 +9,6 @@
     --input-color:rgba(0, 0, 0, 0.162);
 
 }
+img{
+    border: 2px rgb(25, 40, 207) solid;
+}
