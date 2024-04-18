@@ -22,6 +22,7 @@ function App() {
             <Header dark={date} setDark={setDark}></Header>
             
             {/* Pass state to Main component */}
+            <AppProvider/>
             <Main dark={date}></Main>
           </div>
         </div>
