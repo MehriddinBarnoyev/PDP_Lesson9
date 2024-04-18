@@ -8,7 +8,7 @@ import img5 from './../../images/img5.jpg';
 
 const Header = ({ dark, setDark }) => {
   const toggleDarkMode = () => {
-    setDark(!dark);
+    setDark(prevDark => !prevDark);
   };
 
   return (

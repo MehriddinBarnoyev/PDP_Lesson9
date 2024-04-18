@@ -12,7 +12,7 @@ const Main = ({ dark }) => {
     // Memoize the array of items to avoid re-creation on every render
     const items = useMemo(() => [
         { id: 1, name: "Abhishek Bro", message: "Ma dami 👌 caption ma  garchu hai vai...", image: img1 },
-        { id: 2, name: "Sagar Bro", message: "Like colombia, ko fox movies haru metro g...", image: img2 },
+        { id: 2, name: " Sagar", message: "Like colombia, ko fox movies haru metro g...", image: img2 },
         { id: 3, name: "Sagar Bro", message: "Yeso freelancing haniyo bhane sajilo hunch...", image: img3 },
         { id: 4, name: "Sagar Bro", message: "Order now lai download rakhdaa k hol...", image: img4 },
         { id: 5, name: "Sagar Bro", message: "Design by maa tpai tag garxu 😂 ni ki ka...", image: img5 }
@@ -33,7 +33,7 @@ const Main = ({ dark }) => {
                 </div>
                 <div className="col text-center">
                     <FontAwesomeIcon icon={faContactBook} />
-                </div>
+                </div>  
             </div>
         </div>
     );
