@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
 import Main from './Components/MainCard';
+import { AppProvider } from './AppProvider';
 
 function App() {
   const [date, setDate] = useState(false);
@@ -10,6 +11,7 @@ function App() {
   const setDark = useCallback(() => {
     setDate(prevDate => !prevDate);
   }, []);
+  
 
   return (
     <div className="App">
@@ -27,5 +29,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

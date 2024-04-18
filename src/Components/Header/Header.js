@@ -9,7 +9,6 @@ import img5 from './../../images/img5.jpg';
 class Header extends Component {
   constructor(props) {
     super(props);
-   
   }
 
   toggleDarkMode = () => {
@@ -17,20 +16,19 @@ class Header extends Component {
   };
 
   render() {
-
     return (
       <div className={`header rounded shadow p-3 overflow-hidden ${this.props.dark ? 'bg-dark' : 'bg-#00BFA5'}`}>
         <div className="header-component d-flex justify-content-between">
-          <p className={`h5 text-${this.props.dark ? 'white' : 'white'}`}>WhatsApp</p>
-          <div className={`text-${this.props.dark ? 'white' : 'white'}`}>
+          <p className={`h5 text-${this.props.dark ? 'white' : 'black'}`}>WhatsApp</p>
+          <div className={`text-${this.props.dark ? 'white' : 'black'}`}>
             <button className='btn' onClick={this.toggleDarkMode}>
-              {this.props.dark ? 'Light Mode' : 'Dark Mode'}
+              {this.props.dark ? 'Kunduzgi rejim' : 'Tungi rejim'}
             </button>
             <FontAwesomeIcon icon={faSearch} />
             <FontAwesomeIcon icon={faEllipsis} aria-hidden="true" className='ms-3' />
           </div>
         </div>
-        <div className={`row text-${this.props.dark ? 'white' : 'white'}`}>
+        <div className={`row text-${this.props.dark ? 'white' : 'black'}`}>
           <div className="col">
             <div className='  ms-1'>
               <img src={img1} alt="" className='mt-2 ' />
@@ -51,7 +49,6 @@ class Header extends Component {
           </div>
         </div>
       </div>
-      
     );
   }
 }
